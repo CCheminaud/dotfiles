@@ -1,0 +1,22 @@
+#
+# ~/.config/topgrade.toml
+#
+# See https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml
+#
+
+# Run specific steps - same options as the command line flag
+only = [
+   "custom_commands",
+   "brew_cask",
+   "brew_formula",
+   "git_repos",
+   "gem",
+   "pip3",
+   "mas",
+   "shell",
+   "system",
+]
+
+# Custom commands
+[commands]
+"Brew cleanup" = "brew cleanup"
