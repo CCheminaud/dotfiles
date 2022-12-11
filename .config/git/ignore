@@ -1,0 +1,8 @@
+#
+# ~/.config/git/ignore
+#
+# See https://git-scm.com/docs/gitignore
+#
+
+# MacOS
+.DS_Store

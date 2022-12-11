@@ -1,0 +1,61 @@
+#
+# ~/.config/git/config
+#
+# See https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+#
+
+[checkout]
+    defaultRemote = origin
+
+[core]
+    autocrlf = false
+    editor = vim
+    pager = delta
+
+[commit]
+    gpgsign = true
+
+[color]
+    ui = true
+
+# Delta for git
+# See https://github.com/dandavison/delta
+[delta]
+    light = false
+    line-numbers = true
+    navigate = true
+
+[diff]
+    colorMoved = default
+
+[fetch]
+    prune = true
+
+[init]
+	defaultBranch = main
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = diff3
+
+[pull]
+    rebase = false
+
+[push]
+    autoSetupRemote = true
+
+[pretty]
+    # Short log in one line
+    custom-oneline = "format:%C(magenta)%h%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)<%an>%C(reset) %C(green)(%ar)%C(reset)"
+    # Complete log on multiple lines
+    custom-full = "format:%C(magenta)%h%C(reset)%C(auto)%d%C(reset)%n%n\
+  %C(dim white)Author:%C(reset) %C(bold yellow)%aN%C(reset) %C(yellow)<%aE>%C(reset)%n\
+          %C(green)%ad%C(reset) %C(dim green)(%ar)%C(reset)%n\
+  %C(dim white)Commit:%C(reset) %C(bold yellow)%cN%C(reset) %C(yellow)<%cE>%C(reset) %C(italic dim blue)[GPG: %G?% GK]%C(reset)%n\
+          %C(green)%cd%C(reset) %C(dim green)(%cr)%C(reset)%n %w(0,2,2)%n%C(bold)%s%C(reset)%n%n%-b%n%n%-N%n%n"
+
+[user]
+    name = Corentin Cheminaud
+    email = corentin.cheminaud@icloud.com
