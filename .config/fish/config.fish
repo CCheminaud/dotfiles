@@ -24,10 +24,6 @@ end
 # Set the default Less options
 set -x LESS '-R'
 
-# Use NVM to load the right Node.js
-# https://github.com/nvm-sh/nvm
-load_nvm
-
 # Load Starship prompt
 starship init fish | source
 
