@@ -176,6 +176,7 @@ symbol = " "
 
 [status]
 disabled = false
+symbol = ""
 
 [swift]
 symbol = "ﯣ "
