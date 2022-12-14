@@ -72,6 +72,11 @@ $status\
 $shell\
 $character"""
 
+# Timeout for commands executed by starship (in milliseconds)
+command_timeout = 1000
+# Timeout for starship to scan files (in milliseconds)
+scan_timeout = 50
+
 [aws]
 symbol = " "
 
