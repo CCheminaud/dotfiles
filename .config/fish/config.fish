@@ -1,7 +1,7 @@
 #
 # ~/.config/fish/config.fish
 #
-# See https://fishshell.com/docs/current/language.html#configuration
+# See https://fishshell.com/docs/current/language.html#configuration.
 #
 
 # Load private config if it exists

@@ -1,7 +1,7 @@
 #
 # ~/.config/topgrade.toml
 #
-# See https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml
+# See https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml.
 #
 
 # Run specific steps - same options as the command line flag
