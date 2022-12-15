@@ -6,16 +6,24 @@
 
 # Run specific steps - same options as the command line flag
 only = [
-   "custom_commands",
    "brew_cask",
    "brew_formula",
+   "custom_commands",
    "gem",
-   "pip3",
+   "git_repos",
    "mas",
+   "pip3",
    "shell",
    "system",
+   "yadm"
 ]
 
 # Custom commands
 [commands]
 "Brew cleanup" = "brew cleanup"
+
+# Git repositories
+[git]
+repos = [
+    "~/.SpaceVim",
+]
