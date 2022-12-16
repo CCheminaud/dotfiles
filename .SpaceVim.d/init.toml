@@ -52,6 +52,11 @@
 [[layers]]
     name = 'colorscheme'
 
+# Core layer
+[[layers]]
+    name = 'core'
+    filetree_show_hidden = true 
+
 # Git
 [[layers]]
     name = 'git'
