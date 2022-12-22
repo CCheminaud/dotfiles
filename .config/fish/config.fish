@@ -14,18 +14,15 @@ function fish_title
     echo (basename $PWD)
 end
 
-# Editor
+# Set EDITOR
 if type -q nvim
     set -gx EDITOR nvim
 else if type -q vim
     set -gx EDITOR vim
 end
 
-# Set the default Less options
+# Set the default LESS options
 set -x LESS '-R'
 
-# Load Starship prompt
-starship init fish | source
-
-# Add to the path
+# Add folder(s) to PATH
 fish_add_path ~/.local/bin
