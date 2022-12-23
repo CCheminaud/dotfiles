@@ -1,0 +1,6 @@
+#
+# ~/.gitignore
+#
+
+# Private Zsh config
+.zshrc.private
