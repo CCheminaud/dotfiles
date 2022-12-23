@@ -2,10 +2,10 @@ if not status is-interactive
     exit 0
 end
 
-# exa
-# https://github.com/ogham/exa
+# Replace ls by exa
+# See https://the.exa.website/docs/command-line-options
 if type -q exa
-    alias ls 'exa -1 --icons --group-directories-first --links --group -a'
+    alias ls 'exa -1aHg'
 end
 
 # VIM
