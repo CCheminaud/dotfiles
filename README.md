@@ -1,15 +1,16 @@
 # dotfiles
 
-These are all my dotfiles that I use everyday. Feel free to take what you want, but at your own risk.  
+These are all my dotfiles that I use everyday. Feel free to take what you want, but at your own risk.
+
 It mainly target macOS systems but it works with linux as well.
 
 ## Highlights
 
-- Shell configuration for [Fish](https://fishshell.com/) and ZSH
+- Shell configuration for [Fish](https://fishshell.com/) and Zsh
 - Fast and colored prompt with [Starship](https://starship.rs/)
 - [Git](https://git-scm.com/) configuration, aliases...
 - VIM ready for use (using [SpaceVim](https://spacevim.org/))
-- Keep the system up to date with one command (using [Topgrade](https://github.com/topgrade-rs/topgrade))
+- Keeping the system up to date with [Topgrade](https://github.com/topgrade-rs/topgrade)
 - Everything is managed by [yadm](https://yadm.io/)
 
 ## Getting started
