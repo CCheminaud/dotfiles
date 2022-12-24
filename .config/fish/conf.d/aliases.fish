@@ -8,6 +8,11 @@ if type -q exa
     alias ls 'exa -1aHg'
 end
 
+# Replace top by bottom
+if type -q btm
+    alias top 'btm'
+end
+
 # VIM
 if type -q nvim
     alias vim 'nvim'
