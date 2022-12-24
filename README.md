@@ -9,8 +9,9 @@ It mainly target macOS systems but it works with linux as well.
 - Shell configuration for [Fish](https://fishshell.com/) and Zsh
 - Fast and colored prompt with [Starship](https://starship.rs/)
 - [Git](https://git-scm.com/) configuration, aliases...
-- VIM ready for use (using [SpaceVim](https://spacevim.org/))
+- Vim ready for use (using [SpaceVim](https://spacevim.org/))
 - Keeping the system up to date with [Topgrade](https://github.com/topgrade-rs/topgrade)
+- Some system command alternatives ([bottom](https://github.com/ClementTsang/bottom), [exa](https://the.exa.website/))
 - Everything is managed by [yadm](https://yadm.io/)
 
 ## Getting started
