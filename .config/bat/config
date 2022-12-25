@@ -1,0 +1,11 @@
+#
+# ~/.config/bat/config
+#
+# See https://github.com/sharkdp/bat#configuration-file.
+#
+
+# Set the theme
+--theme="Monokai Extended"
+
+# Use italic text on the terminal (not supported on all terminals)
+--italic-text=always

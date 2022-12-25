@@ -2,6 +2,11 @@ if not status is-interactive
     exit 0
 end
 
+# Replace cat by bat
+if type -q bat
+    alias cat 'bat'
+end
+
 # Replace ls by exa
 # See https://the.exa.website/docs/command-line-options
 if type -q exa

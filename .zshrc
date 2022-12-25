@@ -7,6 +7,11 @@ if [ -f ~/.zshrc.private ]; then
     . ~/.zshrc.private
 fi
 
+# Replace cat by bat
+if type "bat" > /dev/null; then
+    alias cat="bat"
+fi
+
 # Replace ls by exa
 # See https://the.exa.website/docs/command-line-options
 if type "exa" > /dev/null; then
