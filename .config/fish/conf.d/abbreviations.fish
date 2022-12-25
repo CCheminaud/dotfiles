@@ -59,11 +59,6 @@ if type -q git
     abbr -ag gtd 'git tag -d'
 end
 
-# htop
-if type -q htop
-    abbr -ag htop 'htop --delay=20'
-end
-
 # Lazydocker
 # https://github.com/jesseduffield/lazydocker
 if type -q lazydocker
