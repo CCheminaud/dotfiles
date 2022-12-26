@@ -32,3 +32,8 @@ fi
 if type "starship" > /dev/null; then
     eval "$(starship init zsh)"
 fi
+
+# Load zoxide
+if type "zoxide" > /dev/null; then
+    eval "$(zoxide init zsh)"
+fi

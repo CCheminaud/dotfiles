@@ -4,7 +4,6 @@
 
 # All plugins files (since Fisher installs them in this directory)
 completions/fisher.fish
-conf.d/z.fish
 functions/__*
 functions/bass.fish
 functions/fisher.fish
