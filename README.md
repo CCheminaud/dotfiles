@@ -2,11 +2,11 @@
 
 These are all my dotfiles that I use everyday. Feel free to take what you want, but at your own risk.
 
-It mainly target macOS systems but it works with linux as well.
+It mainly target macOS system.
 
 ## Highlights
 
-- Shell configuration for [Fish](https://fishshell.com/) and Zsh
+- Shell configuration for [Nushell](https://www.nushell.sh/), [Fish](https://fishshell.com/) and Zsh
 - Fast and colored prompt with [Starship](https://starship.rs/)
 - [Git](https://git-scm.com/) configuration, aliases...
 - Vim ready for use (using [SpaceVim](https://spacevim.org/))
