@@ -5,5 +5,8 @@
 # Private Fish config
 .config/fish/config.private.fish
 
+# ¨Private Nushell config
+.config/nushell/config.private.nu
+
 # Private Zsh config
 .zshrc.private
