@@ -30,6 +30,13 @@ if not ($private_config_path | path exists) {
     touch $private_config_path
 }
 
+# Set EDITOR
+let-env EDITOR = 'nvim'
+
 # Setup script for loading Starship prompt
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
+
+# Setup script for loading zoxide
+mkdir ~/.cache/zoxide
+zoxide init nushell --no-cmd | save -f ~/.cache/zoxide/init.nu

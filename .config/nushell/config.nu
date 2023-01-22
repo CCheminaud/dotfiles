@@ -19,5 +19,10 @@ let-env config = {
 # Load Starship prompt
 source '~/.cache/starship/init.nu'
 
+# Load zoxide
+source '~/.cache/zoxide/init.nu'
+
+use aliases.nu *
+
 # Load private config
 use '../config.private.nu'
