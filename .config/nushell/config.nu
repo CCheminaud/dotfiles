@@ -23,6 +23,7 @@ source '~/.cache/starship/init.nu'
 source '~/.cache/zoxide/init.nu'
 
 use aliases.nu *
+use fnm.nu *
 
 # Load private config
 use '../config.private.nu'
