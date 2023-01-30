@@ -5,25 +5,6 @@ end
 # Backup
 abbr -ag bck backup
 
-# Docker
-if type -q docker
-    set -l dkps_command 'docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.Names}}"'
-
-    abbr -ag dkps $dkps_command
-    abbr -ag dkpsa "$dkps_command -a"
-    abbr -ag dkl 'docker logs --tail=500 -f'
-end
-
-# Docker compose
-if type -q docker-compose
-    set -l dc_command 'docker-compose'
-
-    abbr -ag dc $dc_command
-    abbr -ag dcu "$dc_command up"
-    abbr -ag dcd "$dc_command down"
-    abbr -ag dclf "$dc_command logs --tail=500 -f"
-end
-
 # Lazydocker
 # https://github.com/jesseduffield/lazydocker
 if type -q lazydocker
