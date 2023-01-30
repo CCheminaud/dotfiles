@@ -1,5 +1,5 @@
 if not status is-interactive; or not type -q docker
-  exit 0
+    exit 0
 end
 
 set -l docker_ps_command 'docker ps --format "table {{.ID}}\t{{.Image}}\t{{.Status}}\t{{.RunningFor}}\t{{.Names}}"'

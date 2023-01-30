@@ -1,5 +1,5 @@
 if not status is-interactive; or not type -q starship
-  exit 0
+    exit 0
 end
 
 # Load Starship prompt
