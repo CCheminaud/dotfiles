@@ -1,4 +1,4 @@
-if not type -q docker
+if not status is-interactive; or not type -q docker
   exit 0
 end
 

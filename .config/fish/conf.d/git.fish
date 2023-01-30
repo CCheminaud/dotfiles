@@ -1,4 +1,4 @@
-if not type -q git
+if not status is-interactive; or not type -q git
   exit 0
 end
 

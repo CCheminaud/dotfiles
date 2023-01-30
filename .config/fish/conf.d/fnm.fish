@@ -1,4 +1,4 @@
-if not type -q fnm
+if not status is-interactive; not type -q fnm
   exit 0
 end
 

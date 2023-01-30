@@ -1,4 +1,4 @@
-if not type -q starship
+if not status is-interactive; or not type -q starship
   exit 0
 end
 

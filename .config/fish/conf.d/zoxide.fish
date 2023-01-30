@@ -1,4 +1,4 @@
-if not type -q zoxide
+if not status is-interactive; or not type -q zoxide
     exit 0
 end
 
