@@ -9,7 +9,6 @@
 
 [core]
     autocrlf = false
-    editor = vim
     pager = delta
 
 [commit]
