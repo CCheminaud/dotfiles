@@ -8,6 +8,7 @@
 format = """
 $username\
 $hostname\
+$localip\
 $shlvl\
 $singularity\
 $kubernetes\
@@ -21,9 +22,13 @@ $git_status\
 $hg_branch\
 $docker_context\
 $package\
+
 $fill\
+
+$c\
 $cmake\
 $cobol\
+$daml\
 $dart\
 $deno\
 $dotnet\
@@ -31,6 +36,9 @@ $elixir\
 $elm\
 $erlang\
 $golang\
+$guix_shell\
+$haskell\
+$haxe\
 $helm\
 $java\
 $julia\
@@ -39,11 +47,13 @@ $lua\
 $nim\
 $nodejs\
 $ocaml\
+$opa\
 $perl\
 $php\
 $pulumi\
 $purescript\
 $python\
+$raku\
 $rlang\
 $red\
 $ruby\
@@ -56,24 +66,32 @@ $vagrant\
 $zig\
 $nix_shell\
 $conda\
+$meson\
+$spack\
 $aws\
 $gcloud\
 $openstack\
+$azure\
 $env_var\
 $crystal\
 $custom\
+$sudo\
 $cmd_duration\
 $time\
+
 $line_break\
+
 $jobs\
 $battery\
 $memory_usage\
 $status\
+$os\
+$container\
 $shell\
 $character"""
 
 # Timeout for commands executed by starship (in milliseconds)
-command_timeout = 1000
+command_timeout = 10000
 # Timeout for starship to scan files (in milliseconds)
 scan_timeout = 50
 
