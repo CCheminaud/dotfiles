@@ -18,6 +18,9 @@ only = [
    "yadm"
 ]
 
+# Skip the preamble displayed when topgrade is run
+display_preamble = false
+
 # Custom commands
 [commands]
 "Brew cleanup" = "brew cleanup"
