@@ -24,6 +24,7 @@ display_preamble = false
 # Custom commands
 [commands]
 "Brew cleanup" = "brew cleanup"
+"Brew doctor" = "brew doctor || true"
 
 # Git repositories
 [git]
