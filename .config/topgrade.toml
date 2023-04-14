@@ -9,10 +9,8 @@ only = [
    "brew_cask",
    "brew_formula",
    "custom_commands",
-   "gem",
    "git_repos",
    "mas",
-   "pip3",
    "shell",
    "system",
    "yadm"
