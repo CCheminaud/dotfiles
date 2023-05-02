@@ -2,6 +2,7 @@
 # ~/.config/starship.toml
 #
 # See https://starship.rs/config.
+# For Nerd Font symbols preset, see https://starship.rs/presets/nerd-font.html.
 #
 
 # Use custom format
@@ -98,8 +99,14 @@ scan_timeout = 50
 [aws]
 symbol = " "
 
+[buf]
+symbol = " "
+
 [cmd_duration]
 style = "bold red"
+
+[c]
+symbol = " "
 
 [conda]
 symbol = " "
@@ -108,7 +115,7 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " "
+read_only = " "
 repo_root_style = "bold yellow"
 style = "bold blue"
 
@@ -121,6 +128,9 @@ symbol = " "
 [elm]
 symbol = " "
 
+[fossil_branch]
+symbol = " "
+
 [fill]
 symbol = " "
 
@@ -131,7 +141,7 @@ symbol = " "
 symbol = " "
 
 [git_commit]
-format = "[ﰖ $hash$tag]($style) "
+format = "[ $hash$tag]($style) "
 only_detached = false
 tag_disabled = false
 tag_symbol = "  "
@@ -151,8 +161,20 @@ untracked = "?${count}"
 [golang]
 symbol = " "
 
+[guix_shell]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[haxe]
+symbol = "⌘ "
+
 [hg_branch]
 symbol = " "
+
+[hostname]
+ssh_symbol = " "
 
 [java]
 symbol = " "
@@ -160,21 +182,74 @@ symbol = " "
 [julia]
 symbol = " "
 
+[lua]
+symbol = " "
+
 [memory_usage]
 disabled = false
 format = "[$symbol${ram}]($style) "
 style = "bold dimmed red"
-symbol = " "
+symbol = " "
 threshold = 80
+
+[meson]
+symbol = "喝 "
 
 [nim]
 symbol = " "
 
 [nix_shell]
-symbol = " "
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "﯑ "
+Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = " "
+openSUSE = " "
+OracleLinux = " "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = " "
+Solus = "ﴱ "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = " "
 
 [package]
-symbol = " "
+symbol = " "
+
+[pijul_channel]
+symbol = "🪺 "
 
 [perl]
 symbol = " "
@@ -183,16 +258,22 @@ symbol = " "
 symbol = " "
 
 [python]
-symbol = " "
+symbol = " "
+
+[rlang]
+symbol = "ﳒ "
 
 [ruby]
-symbol = " "
+symbol = " "
 
 [rust]
 symbol = " "
 
 [scala]
 symbol = " "
+
+[spack]
+symbol = "🅢 "
 
 [shlvl]
 symbol = " "
