@@ -99,6 +99,16 @@ scan_timeout = 50
 [aws]
 symbol = " "
 
+[azure]
+symbol = " "
+
+[battery]
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+empty_symbol = "󰂎 "
+full_symbol = "󰁹 "
+unknown_symbol = "󰁽 "
+
 [buf]
 symbol = " "
 
@@ -115,7 +125,7 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " "
+read_only = " 󰌾"
 repo_root_style = "bold yellow"
 style = "bold blue"
 
@@ -189,14 +199,14 @@ symbol = " "
 disabled = false
 format = "[$symbol${ram}]($style) "
 style = "bold dimmed red"
-symbol = " "
+symbol = "󰍛 "
 threshold = 80
 
 [meson]
-symbol = "喝 "
+symbol = "󰔷 "
 
 [nim]
-symbol = " "
+symbol = "󰆥 "
 
 [nix_shell]
 symbol = " "
@@ -218,10 +228,10 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
-Garuda = "﯑ "
+Garuda = "󰛓 "
 Gentoo = " "
-HardenedBSD = "ﲊ "
-Illumos = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
 Linux = " "
 Mabox = " "
 Macos = " "
@@ -231,22 +241,22 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
-OpenBSD = " "
+OpenBSD = "󰈺 "
 openSUSE = " "
-OracleLinux = " "
+OracleLinux = "󰌷 "
 Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
-Redox = " "
-Solus = "ﴱ "
+Redox = "󰀘 "
+Solus = "󰠳 "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
-Windows = " "
+Windows = "󰍲 "
 
 [package]
-symbol = " "
+symbol = "󰏗 "
 
 [pijul_channel]
 symbol = "🪺 "
@@ -261,7 +271,7 @@ symbol = " "
 symbol = " "
 
 [rlang]
-symbol = "ﳒ "
+symbol = "󰟔 "
 
 [ruby]
 symbol = " "
