@@ -11,6 +11,11 @@
     # Update will be down by pulling ~/.SpaceVim repository manually
     automatic_update = false
 
+    # Welcome board
+
+    # Hide filtree on the welcome board
+    enable_vimfiler_welcome = false
+
     # Colorschemes
 
     # Set spacevim theme. by default colorscheme layer is not loaded,
@@ -70,4 +75,3 @@
 # Version control
 [[layers]]
     name = 'VersionControl'
-
