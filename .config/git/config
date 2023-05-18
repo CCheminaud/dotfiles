@@ -51,10 +51,11 @@
     custom-oneline = "format:%C(magenta)%h%C(reset) %C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)<%an>%C(reset) %C(green)(%ar)%C(reset)"
     # Complete log on multiple lines
     custom-full = "format:%C(magenta)%h%C(reset)%C(auto)%d%C(reset)%n%n\
-  %C(dim white)Author:%C(reset) %C(bold yellow)%aN%C(reset) %C(yellow)<%aE>%C(reset)%n\
-          %C(green)%ad%C(reset) %C(dim green)(%ar)%C(reset)%n\
-  %C(dim white)Commit:%C(reset) %C(bold yellow)%cN%C(reset) %C(yellow)<%cE>%C(reset) %C(italic dim blue)[GPG: %G?% GK]%C(reset)%n\
-          %C(green)%cd%C(reset) %C(dim green)(%cr)%C(reset)%n %w(0,2,2)%n%C(bold)%s%C(reset)%n%n%-b%n%n%-N%n%n"
+             %C(dim white)Hash:%C(reset) %C(dim white)%H%C(reset)%n\
+           %C(dim white)Author:%C(reset) %C(bold yellow)%aN%C(reset) %C(yellow)<%aE>%C(reset)%n\
+      %C(dim white)Author date:%C(reset) %C(green)%ad%C(reset) %C(dim green)(%ar)%C(reset)%n\
+        %C(dim white)Committer:%C(reset) %C(bold yellow)%cN%C(reset) %C(yellow)<%cE>%C(reset) %C(italic dim blue)[GPG: %G?% GK]%C(reset)%n\
+      %C(dim white)Commit date:%C(reset) %C(green)%cd%C(reset) %C(dim green)(%cr)%C(reset)%n %w(0,2,2)%n%C(bold)%s%C(reset)%n%n%-b%n%n%-N%n%n"
 
 [user]
     name = Corentin Cheminaud
