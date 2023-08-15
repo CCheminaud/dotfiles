@@ -1,4 +1,3 @@
-[misc]
 #
 # ~/.config/topgrade.toml
 #
@@ -7,14 +6,14 @@
 
 # Run specific steps - same options as the command line flag
 only = [
-   "brew_cask",
-   "brew_formula",
-   "custom_commands",
-   "git_repos",
-   "mas",
-   "shell",
-   "system",
-   "yadm"
+    "brew_cask",
+    "brew_formula",
+    "custom_commands",
+    "git_repos",
+    "mas",
+    "shell",
+    "system",
+    "yadm",
 ]
 
 # Custom commands
@@ -24,6 +23,4 @@ only = [
 
 # Git repositories
 [git]
-repos = [
-    "~/.SpaceVim",
-]
+repos = ["~/.SpaceVim"]
