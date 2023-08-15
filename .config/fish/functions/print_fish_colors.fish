@@ -1,5 +1,5 @@
 function print_fish_colors --description 'Shows the various Fish colors being used'
-    set -l clr_list (set -n | grep fish | grep color | grep -v __)
+    set -l clr_list (set -n | grep fish | grep _color_ | grep -v __)
     if test -n "$clr_list"
         set -l bclr (set_color normal)
         set -l bold (set_color --bold)
