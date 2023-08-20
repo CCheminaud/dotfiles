@@ -1,0 +1,76 @@
+#!/usr/bin/env python3
+
+import iterm2
+import AppKit
+import argparse
+
+ITERM_BUNDLE_ID = 'com.googlecode.iterm2'
+
+# Command that should be run
+command = None
+# iTerm's profile that should b used for running the command
+profile = None
+# Flag indicating iTerm is already running
+is_running = False
+
+def launch_application(bundle_id):
+    workspace = AppKit.NSWorkspace.sharedWorkspace()
+    app_url = workspace.URLForApplicationWithBundleIdentifier_(bundle_id)
+
+    if app_url is not None:
+        workspace.launchApplicationAtURL_options_configuration_error_(
+            app_url,
+            AppKit.NSWorkspaceLaunchDefault,
+            None,
+            None
+        )
+    else:
+        raise Exception(f"Application with bundle identifier '{bundle_id}' not found.")
+
+def is_application_running(bundle_id):
+    workspace = AppKit.NSWorkspace.sharedWorkspace()
+    running_apps = workspace.runningApplications()
+
+    for app in running_apps:
+        if app.bundleIdentifier() == bundle_id:
+            return True
+
+    return False
+
+async def control_iTerm(connection):
+    global command, profile, is_running
+
+    app = await iterm2.async_get_app(connection)
+
+    # Foreground the app
+    await app.async_activate()
+
+    current_tab = app.current_window.current_tab
+    current_profile = await current_tab.current_session.async_get_profile()
+
+    if is_running or (profile is not None and current_profile.name != profile):
+        current_tab = await app.current_window.async_create_tab(profile=profile)
+        await current_tab.async_activate()
+
+    # Send the command to this new tab
+    await current_tab.current_session.async_send_text(command + '\n')
+
+def main():
+    global command, profile, is_running
+
+    # Parse command line arguments
+    parser = argparse.ArgumentParser(description='Execute a command using iTerm2.')
+    parser.add_argument('command', help='command to run')
+    parser.add_argument('-p', '--profile', help='profile to use')
+    args = parser.parse_args()
+    command = args.command
+    profile = args.profile
+
+    # Launch iTerm if needed
+    is_running = is_application_running(ITERM_BUNDLE_ID)
+    if not is_running:
+        launch_application(ITERM_BUNDLE_ID)
+
+    iterm2.run_until_complete(control_iTerm, True)
+
+main()
