@@ -4,6 +4,7 @@
 # See https://github.com/topgrade-rs/topgrade/blob/master/config.example.toml.
 #
 
+[misc]
 # Run specific steps - same options as the command line flag
 only = [
     "brew_cask",
