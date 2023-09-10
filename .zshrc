@@ -7,9 +7,9 @@ if [ -f ~/.zshrc.private ]; then
     . ~/.zshrc.private
 fi
 
-# Replace ls by exa
-if type "exa" > /dev/null; then
-    alias ls="exa -1aHg"
+# Replace ls by eza
+if type "eza" > /dev/null; then
+    alias ls="eza -1aHg"
 fi
 
 # Load fnm
