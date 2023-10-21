@@ -24,4 +24,4 @@ only = [
 
 # Git repositories
 [git]
-repos = ["~/.SpaceVim"]
+pull_only_repos = ["~/.SpaceVim"]
