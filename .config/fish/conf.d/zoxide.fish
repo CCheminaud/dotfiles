@@ -5,7 +5,7 @@
 # See https://github.com/ajeetdsouza/zoxide.
 #
 
-if not status is-interactive; or not is_available zoxide
+if not status is-interactive; or not command_exists zoxide
     exit 0
 end
 

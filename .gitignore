@@ -2,11 +2,13 @@
 # ~/.gitignore
 #
 
-# Private Fish config
+# Fish
 .config/fish/config.private.fish
+.config/fish/fisher
+.config/fish/fish_variables
 
-# ¨Private Nushell config
+# Nushell
 .config/nushell/config.private.nu
 
-# Private Zsh config
+# Zsh
 .zshrc.private

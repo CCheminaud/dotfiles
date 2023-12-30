@@ -4,7 +4,7 @@
 # This file contains everything needed for Git integration.
 #
 
-if not status is-interactive; or not is_available git
+if not status is-interactive; or not command_exists git
     exit 0
 end
 

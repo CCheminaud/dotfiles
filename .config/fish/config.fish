@@ -5,11 +5,6 @@
 # See https://fishshell.com/docs/current/language.html#configuration.
 #
 
-# Load private config if it exists
-if [ -f ~/.config/fish/config.private.fish ]
-    source ~/.config/fish/config.private.fish
-end
-
 # Set terminal's title
 function fish_title -d "Define the terminal’s title"
     echo (basename $PWD)
@@ -21,12 +16,17 @@ function fish_greeting -d "Display a welcome message in interactive shells"
 end
 
 # Set EDITOR
-if is_available nvim
+if command_exists nvim
     set -x EDITOR nvim
 end
 
 # Set the default LESS options
 set -x LESS '-R'
+
+# Load private config if it exists
+if [ -f ~/.config/fish/config.private.fish ]
+    source ~/.config/fish/config.private.fish
+end
 
 #
 # PATH configuration
@@ -40,22 +40,22 @@ fish_add_path /usr/local/sbin # Homebrew
 #
 
 # bat (instead of cat)
-if is_available bat
+if command_exists bat
     abbr -ag cat 'bat'
 end
 
 # bottom (instead of top)
-if is_available btm
+if command_exists btm
     abbr -ag top 'btm'
 end
 
 # Lazydocker
-if is_available lazydocker
+if command_exists lazydocker
     abbr -ag lzd 'lazydocker'
 end
 
 # Lazygit
-if is_available lazygit
+if command_exists lazygit
     abbr -ag lzg 'lazygit'
 end
 
@@ -64,12 +64,12 @@ abbr -ag ll 'ls -l'
 abbr -ag la 'ls -a'
 
 # NeoVim
-if is_available nvim
+if command_exists nvim
     abbr -ag vim 'nvim'
     abbr -ag vi 'nvim'
 end
 
 # Visual Studio Code
-if is_available code
+if command_exists code
     abbr -ag c 'code -n'
 end

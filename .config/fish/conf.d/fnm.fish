@@ -5,7 +5,7 @@
 # See https://github.com/Schniz/fnm.
 #
 
-if not status is-interactive; or not is_available fnm
+if not status is-interactive; or not command_exists fnm
     exit 0
 end
 

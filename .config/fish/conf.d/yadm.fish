@@ -4,7 +4,7 @@
 # This file contains everything needed for YADM integration.
 #
 
-if not status is-interactive; or not is_available yadm
+if not status is-interactive; or not command_exists yadm
     exit 0
 end
 

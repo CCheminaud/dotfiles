@@ -4,7 +4,7 @@
 # This file contains everything needed for Docker integration.
 #
 
-if not status is-interactive; or not is_available docker
+if not status is-interactive; or not command_exists docker
     exit 0
 end
 

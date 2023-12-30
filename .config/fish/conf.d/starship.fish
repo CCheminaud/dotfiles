@@ -5,7 +5,7 @@
 # See https://starship.rs.
 #
 
-if not status is-interactive; or not is_available starship
+if not status is-interactive; or not command_exists starship
     exit 0
 end
 

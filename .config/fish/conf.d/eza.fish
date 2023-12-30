@@ -5,7 +5,7 @@
 # See https://github.com/eza-community/eza.
 #
 
-if not status is-interactive; or not is_available eza
+if not status is-interactive; or not command_exists eza
     exit 0
 end
 
