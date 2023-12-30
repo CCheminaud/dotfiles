@@ -1,0 +1,48 @@
+#
+# ~/.config/fish/themes/custom.theme
+#
+# This is a custom theme for syntax highlighting.
+# See https://fishshell.com/docs/current/interactive.html#syntax-highlighting.
+#
+
+# Syntax highlighting colors
+fish_color_autosuggestion brblack
+fish_color_cancel --background=red
+fish_color_command green --bold
+fish_color_comment brblack
+fish_color_cwd 73d0ff
+fish_color_cwd_root red
+fish_color_end yellow
+fish_color_error brred
+fish_color_escape magenta
+fish_color_history_current --bold
+fish_color_host normal
+fish_color_host_remote
+fish_color_keyword
+fish_color_match f28779
+fish_color_normal cbccc6
+fish_color_operator yellow
+fish_color_option
+fish_color_param cyan
+fish_color_quote yellow
+fish_color_redirection brblue
+fish_color_search_match bryellow
+fish_color_selection --background=ffcc66
+fish_color_status red
+fish_color_user brgreen
+fish_color_valid_path --underline
+
+# Completion pager colors
+fish_pager_color_background
+fish_pager_color_completion brblack
+fish_pager_color_description yellow
+fish_pager_color_prefix yellow
+fish_pager_color_progress white
+fish_pager_color_secondary_background
+fish_pager_color_secondary_completion
+fish_pager_color_secondary_description
+fish_pager_color_secondary_prefix
+fish_pager_color_selected_background --background=yellow
+fish_pager_color_selected_completion black
+fish_pager_color_selected_description black
+fish_pager_color_selected_prefix black

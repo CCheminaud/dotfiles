@@ -15,6 +15,9 @@ function fish_greeting -d "Display a welcome message in interactive shells"
     # Print message here
 end
 
+# Set current theme for syntax highlighting
+fish_config theme choose "custom"
+
 # Set EDITOR
 if command_exists nvim
     set -x EDITOR nvim
