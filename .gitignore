@@ -3,8 +3,8 @@
 #
 
 # Fish
+.config/fish/__plugins
 .config/fish/config.private.fish
-.config/fish/fisher
 .config/fish/fish_variables
 
 # Nushell

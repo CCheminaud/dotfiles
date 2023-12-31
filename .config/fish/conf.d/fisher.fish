@@ -10,4 +10,4 @@ if not status is-interactive; or not command_exists fisher
 end
 
 # Set Fisher plugins installation path
-set -U fisher_path ~/.config/fish/fisher
+set -U fisher_path ~/.config/fish/__plugins
