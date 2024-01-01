@@ -18,7 +18,7 @@ It mainly target macOS system.
 
 Clone this repository using `yadm`.
 
-```
+```shell
 yadm clone https://github.com/CCheminaud/dotfiles.git
 yadm status
 ```
@@ -26,3 +26,19 @@ yadm status
 The `clone` command will attempt to check out all files that exist in the repository.
 If a file already exists locally and has content that differs from the one in the repository,
 the local file will be left unmodified and you’ll have to review and resolve the differences.
+
+### Fish
+
+Install the required packages with Homebrew.
+
+```shell
+brew install fish fisher
+```
+
+Then start a new session with Fish and proceed with plugin installation.\
+If needed, a private configuration file can be created too.
+
+```shell
+fisher update
+touch ~/.config/fish/config.private.fish
+```
