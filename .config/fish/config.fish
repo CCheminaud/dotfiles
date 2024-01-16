@@ -76,3 +76,6 @@ end
 if command_exists code
     abbr -ag c 'code -n'
 end
+
+# Others
+abbr -ag cl 'clear'
