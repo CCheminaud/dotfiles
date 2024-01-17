@@ -9,7 +9,7 @@ It mainly target macOS system.
 - Shell configuration for [Nushell](https://www.nushell.sh/), [Fish](https://fishshell.com/) and Zsh
 - Fast and colored prompt with [Starship](https://starship.rs/)
 - [Git](https://git-scm.com/) configuration, aliases...
-- Vim ready for use (using [SpaceVim](https://spacevim.org/))
+- Vim ready for use (using [AstroNvim](https://docs.astronvim.com))
 - Keeping the system up to date with [Topgrade](https://github.com/topgrade-rs/topgrade)
 - Some system command alternatives ([bottom](https://github.com/ClementTsang/bottom), [eza](https://github.com/eza-community/eza))
 - Everything is managed by [yadm](https://yadm.io/)
