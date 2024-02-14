@@ -42,3 +42,21 @@ If needed, a private configuration file can be created too.
 fisher update
 touch ~/.config/fish/config.private.fish
 ```
+
+### AstroNvim
+
+Backup the current configuration and internal folders.
+
+```shell
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+```
+
+Then, clone the repository and launch `nvim`.
+
+```shell
+git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
+nvim
+```
