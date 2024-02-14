@@ -21,7 +21,3 @@ only = [
 [commands]
 "Brew cleanup" = "brew cleanup"
 "Brew doctor" = "brew doctor || true"
-
-# Git repositories
-[git]
-repos = ["~/.SpaceVim"]
