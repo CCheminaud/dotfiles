@@ -18,13 +18,13 @@ end
 # Set current theme for syntax highlighting
 fish_config theme choose "custom"
 
-# Set EDITOR
+set -x EDITOR vim
 if command_exists nvim
     set -x EDITOR nvim
 end
 
-# Set the default LESS options
-set -x LESS '-R'
+set -x PAGER 'less'
+set -x LESS '-R --mouse'
 
 # Load private config if it exists
 if [ -f ~/.config/fish/config.private.fish ]
