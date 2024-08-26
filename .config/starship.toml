@@ -5,156 +5,94 @@
 # For Nerd Font symbols preset, see https://starship.rs/presets/nerd-font.html.
 #
 
-# Use custom format
-format = """
-$username\
-$hostname\
-$localip\
-$shlvl\
-$singularity\
-$kubernetes\
-$directory\
-$vcsh\
-$git_branch\
-$git_commit\
-$git_state\
-$git_metrics\
-$git_status\
-$hg_branch\
-$docker_context\
-$package\
-
-$fill\
-
-$c\
-$cmake\
-$cobol\
-$daml\
-$dart\
-$deno\
-$dotnet\
-$elixir\
-$elm\
-$erlang\
-$golang\
-$guix_shell\
-$haskell\
-$haxe\
-$helm\
-$java\
-$julia\
-$kotlin\
-$lua\
-$nim\
-$nodejs\
-$ocaml\
-$opa\
-$perl\
-$php\
-$pulumi\
-$purescript\
-$python\
-$raku\
-$rlang\
-$red\
-$ruby\
-$rust\
-$scala\
-$swift\
-$terraform\
-$vlang\
-$vagrant\
-$zig\
-$nix_shell\
-$conda\
-$meson\
-$spack\
-$aws\
-$gcloud\
-$openstack\
-$azure\
-$env_var\
-$crystal\
-$custom\
-$sudo\
-$cmd_duration\
-$time\
-
-$line_break\
-
-$jobs\
-$battery\
-$memory_usage\
-$status\
-$os\
-$container\
-$shell\
-$character"""
-
 # Timeout for commands executed by starship (in milliseconds)
 command_timeout = 10000
 # Timeout for starship to scan files (in milliseconds)
 scan_timeout = 50
 
-[aws]
-symbol = " "
+format = """
+[](primary_1)\
+$os\
+[](bg:primary_2 fg:primary_1)\
+$directory\
+[](fg:primary_2 bg:secondary_1)\
+$git_branch\
+$git_status\
+$git_commit\
+[](fg:secondary_1 bg:secondary_2)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$php\
+$java\
+$kotlin\
+$haskell\
+$python\
+$package\
+[](fg:secondary_2 bg:secondary_3)\
+$docker_context\
+$cmd_duration\
+[](fg:secondary_3)\
+$line_break\
+([](fg:error)$status[](fg:error))\
+$character"""
 
-[azure]
-symbol = " "
+palette = 'violet_orange'
 
-[battery]
-charging_symbol = "󰂄 "
-discharging_symbol = "󰂃 "
-empty_symbol = "󰂎 "
-full_symbol = "󰁹 "
-unknown_symbol = "󰁽 "
+[palettes.violet_orange]
+primary_1 = '#240046'
+on_primary_1 = '#fbf1c7'
+primary_2 = '#3c096c'
+on_primary_2 = '#fbf1c7'
+primary_3 = '#9d4edd'
+on_primary_3 = '#000000'
+secondary_1 = '#ff9e00'
+on_secondary_1 = '#000000'
+secondary_2 = '#ff8500'
+on_secondary_2 = '#000000'
+secondary_3 = '#ff6d00'
+on_secondary_3 = '#000000'
+error = '#FF204E'
+on_error = '#000000'
+success = 'green'
+on_success = '#000000'
 
-[buf]
-symbol = " "
+[character]
+disabled = false
+success_symbol = '[ ❯](bold fg:success)'
+error_symbol = '[ ❯](bold fg:error)'
 
 [cmd_duration]
-style = "bold red"
-
-[c]
-symbol = " "
-
-[conda]
-symbol = " "
-
-[dart]
-symbol = " "
+format = "[ $duration [](fg:on_secondary_3 bg:secondary_3)]($style)"
+style = "bg:on_secondary_3 fg:secondary_3"
 
 [directory]
-read_only = " 󰌾"
-repo_root_style = "bold yellow"
-style = "bold blue"
+format = "[ $path ]($style)[$read_only]($read_only_style)"
+read_only = "󰌾 "
+read_only_style = "fg:on_primary_2 bg:primary_2"
+repo_root_format = '[[](fg:primary_2 bg:on_primary_3) $repo_root [](fg:on_primary_3 bg:primary_2)]($repo_root_style)[( $path )]($style)[$read_only]($read_only_style)'
+repo_root_style = "fg:primary_3 bg:on_primary_3"
+style = "fg:on_primary_2 bg:primary_2"
+truncation_length = 3
+truncation_symbol = "…/"
 
 [docker_context]
+format = "[ $symbol$context ]($style)"
+style = "bg:secondary_3 fg:on_secondary_3"
 symbol = " "
 
-[elixir]
-symbol = " "
-
-[elm]
-symbol = " "
-
-[fossil_branch]
-symbol = " "
-
-[fill]
-symbol = " "
-
-[gcloud]
-symbol = " "
-
 [git_branch]
-symbol = " "
+format = '[[ $symbol $branch ](fg:on_secondary_1 bg:secondary_1)]($style)'
+style = "bg:color_aqua"
+symbol = ""
 
 [git_commit]
-format = "[ $hash$tag]($style) "
+format = "[(  $hash$tag [](fg:on_secondary_1 bg:secondary_1))]($style)"
 only_detached = false
 tag_disabled = false
 tag_symbol = "  "
+style = "fg:secondary_1 bg:on_secondary_1"
 
 [git_status]
 ahead = "⇡${count}"
@@ -162,139 +100,48 @@ behind = "⇣${count}"
 conflicted = "=${count}"
 deleted = "✘${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+format = '[($all_status$ahead_behind )]($style)'
 modified = "!${count}"
 renamed = "»${count}"
 staged = "+${count}"
 stashed = "\\$${count}"
+style = "fg:on_secondary_1 bg:secondary_1"
 untracked = "?${count}"
 
-[golang]
-symbol = " "
-
-[guix_shell]
-symbol = " "
-
-[haskell]
-symbol = " "
-
-[haxe]
-symbol = "⌘ "
-
-[hg_branch]
-symbol = " "
-
-[hostname]
-ssh_symbol = " "
-
-[java]
-symbol = " "
-
-[julia]
-symbol = " "
-
-[lua]
-symbol = " "
-
-[memory_usage]
+[line_break]
 disabled = false
-format = "[$symbol${ram}]($style) "
-style = "bold dimmed red"
-symbol = "󰍛 "
-threshold = 80
-
-[meson]
-symbol = "󰔷 "
-
-[nim]
-symbol = "󰆥 "
-
-[nix_shell]
-symbol = " "
 
 [nodejs]
-symbol = " "
+symbol = ""
+style = "fg:on_secondary_2 bg:secondary_2"
+format = '[ $symbol( $version) ]($style)'
+
+[os]
+disabled = false
+style = "bg:primary_1 fg:on_primary_1"
 
 [os.symbols]
-Alpaquita = " "
-Alpine = " "
-Amazon = " "
-Android = " "
-Arch = " "
-Artix = " "
-CentOS = " "
-Debian = " "
-DragonFly = " "
-Emscripten = " "
-EndeavourOS = " "
-Fedora = " "
-FreeBSD = " "
-Garuda = "󰛓 "
-Gentoo = " "
-HardenedBSD = "󰞌 "
-Illumos = "󰈸 "
-Linux = " "
-Mabox = " "
 Macos = " "
-Manjaro = " "
-Mariner = " "
-MidnightBSD = " "
-Mint = " "
-NetBSD = " "
-NixOS = " "
-OpenBSD = "󰈺 "
-openSUSE = " "
-OracleLinux = "󰌷 "
-Pop = " "
-Raspbian = " "
-Redhat = " "
-RedHatEnterprise = " "
-Redox = "󰀘 "
-Solus = "󰠳 "
-SUSE = " "
-Ubuntu = " "
-Unknown = " "
-Windows = "󰍲 "
 
 [package]
-symbol = "󰏗 "
-
-[pijul_channel]
-symbol = "🪺 "
-
-[perl]
-symbol = " "
-
-[php]
-symbol = " "
-
-[python]
-symbol = " "
-
-[rlang]
-symbol = "󰟔 "
-
-[ruby]
-symbol = " "
-
-[rust]
-symbol = " "
-
-[scala]
-symbol = " "
-
-[spack]
-symbol = "🅢 "
-
-[shlvl]
-symbol = " "
+format = '[ $symbol $version [](fg:on_secondary_2 bg:secondary_2)]($style)'
+style = "bg:on_secondary_2 fg:secondary_2"
+symbol = "󰏗"
 
 [status]
 disabled = false
+format = '[$symbol$status]($style)'
+style = "fg:on_error bg:error"
 symbol = ""
-
-[swift]
-symbol = "ﯣ "
 
 [time]
 disabled = false
-style = "white"
+time_format = "%R"
+style = "bg:secondary_3 fg:on_secondary_3"
+format = '[  $time ]($style)'
+
+[username]
+show_always = true
+style_user = "bg:primary_1 fg:on_primary_1"
+style_root = "bg:primary_1 fg:on_primary_1"
+format = '[ $user ]($style)'
