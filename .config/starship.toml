@@ -124,8 +124,9 @@ disabled = false
 
 [nodejs]
 symbol = ""
-style = "fg:on_secondary_2 bg:secondary_2"
-format = '[ $symbol( $version) ]($style)'
+style = "fg:secondary_2 bg:on_secondary_2"
+not_capable_style = "fg:error bg:on_error"
+format = '[](fg:secondary_2 bg:on_secondary_2)[ $symbol( $version) [](fg:on_secondary_2 bg:secondary_2)]($style)'
 
 [os]
 disabled = false
