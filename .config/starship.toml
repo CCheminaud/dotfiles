@@ -79,9 +79,9 @@ format = "[ $duration [](fg:on_secondary_3 bg:secondary_3)]($style)"
 style = "bg:on_secondary_3 fg:secondary_3"
 
 [directory]
-format = "[ $path ]($style)[$read_only]($read_only_style)"
-read_only = "󰌾 "
-read_only_style = "fg:on_primary_2 bg:primary_2"
+format = "[ $path ]($style)([[](fg:primary_2 bg:error)$read_only[](fg:error bg:primary_2)]($read_only_style))"
+read_only = " 󰌾 "
+read_only_style = "fg:on_error bg:error"
 repo_root_format = '[[](fg:primary_2 bg:on_primary_3) $repo_root [](fg:on_primary_3 bg:primary_2)]($repo_root_style)[( $path )]($style)[$read_only]($read_only_style)'
 repo_root_style = "fg:primary_3 bg:on_primary_3"
 style = "fg:on_primary_2 bg:primary_2"
