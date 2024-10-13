@@ -33,7 +33,7 @@ $package\
 [](fg:secondary_2 bg:secondary_3)\
 $docker_context\
 $cmd_duration\
-([](fg:secondary_3 bg:on_error)$status$battery [](fg:on_error bg:secondary_3))\
+([](fg:secondary_3 bg:on_error)$status$battery[ ](bg:on_error)[](fg:on_error bg:secondary_3))\
 [](fg:secondary_3)\
 $line_break\
 $character"""
