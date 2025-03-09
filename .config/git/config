@@ -4,6 +4,9 @@
 # See https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration.
 #
 
+[branch]
+    sort = -committerdate
+
 [checkout]
     defaultRemote = origin
 
@@ -13,9 +16,13 @@
 
 [commit]
     gpgsign = true
+    verbose = true
 
 [color]
     ui = true
+
+[column]
+    ui = auto
 
 # Delta for git
 # See https://github.com/dandavison/delta
@@ -26,10 +33,18 @@
     navigate = true
 
 [diff]
-    colorMoved = default
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 
 [fetch]
     prune = true
+    pruneTags = true
+    all = true
+
+[help]
+    autocorrect = prompt
 
 [init]
 	defaultBranch = main
@@ -38,7 +53,7 @@
     diffFilter = delta --color-only
 
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
 
 [pull]
     rebase = false
@@ -56,6 +71,18 @@
       %C(dim white)Author date:%C(reset) %C(green)%ad%C(reset) %C(dim green)(%ar)%C(reset)%n\
         %C(dim white)Committer:%C(reset) %C(bold yellow)%cN%C(reset) %C(yellow)<%cE>%C(reset) %C(italic dim blue)[GPG: %G?% GK]%C(reset)%n\
       %C(dim white)Commit date:%C(reset) %C(green)%cd%C(reset) %C(dim green)(%cr)%C(reset)%n %w(0,2,2)%n%C(bold)%s%C(reset)%n%n%-b%n%n%-N%n%n"
+
+[rebase]
+    autoSquash = true
+    autoStash = true
+    updateRefs = true
+
+[rerere]
+    enabled = true
+    autoupdate = true
+
+[tag]
+    sort = version:refname
 
 [user]
     name = Corentin Cheminaud
