@@ -47,9 +47,9 @@ if command_exists bat
     abbr -ag cat 'bat'
 end
 
-# bottom (instead of top)
-if command_exists btm
-    abbr -ag top 'btm'
+# btop (instead of top)
+if command_exists btop
+    abbr -ag top 'btop'
 end
 
 # Lazydocker
