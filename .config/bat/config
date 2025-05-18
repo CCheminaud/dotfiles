@@ -5,7 +5,7 @@
 #
 
 # Set the theme
---theme="Monokai Extended"
+--theme="rose-pine"
 
 # Use italic text on the terminal (not supported on all terminals)
 --italic-text=always
