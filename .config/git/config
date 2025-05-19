@@ -27,7 +27,7 @@
 # Delta for git
 # See https://github.com/dandavison/delta
 [delta]
-    syntax-theme = Monokai Extended
+    syntax-theme = rose-pine
     light = false
     line-numbers = true
     navigate = true
